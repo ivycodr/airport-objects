@@ -3,16 +3,18 @@ class Airplane {
     static crewMembers = [];
     constructor(name) {
         this.name = name;
+        this.passengers = [];
+        this.crewMembers = [];
         
         
     }
     
     boardPassenger(passenger) {
-        this.constructor.passengers.push(passenger);    
+        this.passengers.push(passenger);    
     }
     
     boardCrewMember(crewMember) {
-        this.constructor.crewMembers.push(crewMember);
+        this.crewMembers.push(crewMember);
     }
 
 }
